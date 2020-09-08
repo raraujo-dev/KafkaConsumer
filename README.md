@@ -10,11 +10,11 @@ The example can be built with
 
 ### Requirements
 
-⋅⋅* [Download and Install Code Ready Studio](https://www.google.com)
+[Download and Install Code Ready Studio](https://www.google.com)
 
-⋅⋅* [Download and Install Code Ready Studio](https://access.redhat.com/downloads/content/290/ver=4.5/rhel---8/4.5.8/x86_64/product-software)
+[Download and Install Code Ready Studio](https://access.redhat.com/downloads/content/290/ver=4.5/rhel---8/4.5.8/x86_64/product-software)
 
-⋅⋅* [Download and Install Maven](https://maven.apache.org/download.cgi)
+[Download and Install Maven](https://maven.apache.org/download.cgi)
 
 
 ### To deploy on Openhsift follow the steps
@@ -22,20 +22,19 @@ The example can be built with
 
 1. Import the fuse image
 
-    oc import-image fuse7/fuse-java-openshift --from=registry.access.redhat.com/fuse7/fuse-java-openshift --confirm
+        oc import-image fuse7/fuse-java-openshift --from=registry.access.redhat.com/fuse7/fuse-java-openshift --confirm
 
 2. Create a new build config on Openshift pointing to the Fuse Image
 
-    oc new-build --binary=true --image-stream=fuse-java-openshift  --name=kafkaproducer
+       oc new-build --binary=true --image-stream=fuse-java-openshift  --name=kafkaproducer
 
 3. Start the build pointing the '--from-dir' variable to the project folder
 
-    oc start-build simple-rest-api --from-dir=. --follow
+       oc start-build simple-rest-api --from-dir=. --follow
 
 4. Create a new app
 
-    oc new-app kafkaproducer
-    
+       oc new-app kafkaproducer
     
     
     
