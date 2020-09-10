@@ -10,9 +10,9 @@ The example can be built with
 
 ### Requirements
 
-[Download and Install Code Ready Studio](https://www.google.com)
+[Download and Install Code Ready Studio](https://developers.redhat.com/products/codeready-studio/download)
 
-[Download and Install Code Ready Studio](https://access.redhat.com/downloads/content/290/ver=4.5/rhel---8/4.5.8/x86_64/product-software)
+[Download and Install Openshift Client](https://access.redhat.com/downloads/content/290/ver=4.5/rhel---8/4.5.8/x86_64/product-software)
 
 [Download and Install Maven](https://maven.apache.org/download.cgi)
 
