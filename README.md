@@ -1,4 +1,4 @@
-# Spring-Boot - Camel Kafka Producer
+# Spring-Boot - Camel Kafka Consumer
 
 Simple Camel Kafka Producer
 
@@ -26,15 +26,15 @@ The example can be built with
 
 2. Create a new build config on Openshift pointing to the Fuse Image
 
-       oc new-build --binary=true --image-stream=fuse-java-openshift  --name=kafkaproducer
+       oc new-build --binary=true --image-stream=fuse-java-openshift  --name=kafkaconsumer
 
 3. Start the build pointing the '--from-dir' variable to the project folder
 
-       oc start-build kafkaproducer --from-dir=. --follow
+       oc start-build kafkaconsumer --from-dir=. --follow
 
 4. Create a new app
 
-       oc new-app kafkaproducer
+       oc new-app kafkaconsumer
     
     
     
