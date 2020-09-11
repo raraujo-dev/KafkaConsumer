@@ -30,7 +30,7 @@ The example can be built with
 
 3. Start the build pointing the '--from-dir' variable to the project folder
 
-       oc start-build simple-rest-api --from-dir=. --follow
+       oc start-build kafkaproducer --from-dir=. --follow
 
 4. Create a new app
 
